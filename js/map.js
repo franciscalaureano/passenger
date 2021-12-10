@@ -1,4 +1,4 @@
-var map = L.map("map").setView([51.505, -0.09], 13);
+var map = L.map("map").setView([40.2018, -8.4256], 20);
 
 var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
