@@ -8,17 +8,10 @@ window.onload = function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 };
-
 // coordenadas da posição atual do utilizador
 function showPosition(position) {
   var lat = position.coords.latitude;
   var long = position.coords.longitude;
-
-  // document.getElementById("latitude").innerHTML = long;
-  // document.getElementById("latitude").style.display = "none";
-
-  // document.getElementById("longitude").innerHTML = lat;
-  // document.getElementById("longitude").style.display = "none";
 
   //------------------
   //-------MAPA-------
@@ -32,7 +25,7 @@ function showPosition(position) {
   });
   osm.addTo(map);
 
-  // circulo para indicar a localização atual da pessoa
+  // círculo para indicar a localização atual da pessoa
   var circle = L.circle([lat, long], {
     color: "#777373",
     colorOpacity: 0.5,
