@@ -31,4 +31,13 @@ function showPosition(position) {
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   });
   osm.addTo(map);
+
+  // circulo para indicar a localização atual da pessoa
+  var circle = L.circle([lat, long], {
+    color: "#777373",
+    colorOpacity: 0.5,
+    fillColor: "#485C73",
+    fillOpacity: 1,
+    radius: 5,
+  }).addTo(map);
 }
