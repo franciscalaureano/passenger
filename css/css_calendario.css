@@ -1,0 +1,178 @@
+@media only screen and (max-device-width: 850px) {
+    body {
+        background-color: #F5F5F5;
+    }
+
+    .imagemseta {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .titulo {
+        font-family: Poppins, sans-serif;
+        color: #485C73;
+        margin-left: 5%;
+    }
+
+    .mes {
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        color: #485C73;
+        margin-left: 5%;
+    }
+
+    .dias_semana {
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        font-size: 10pt;
+        color: #485C73;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dias_semana > p {
+        padding: 0 40px 0 0;
+    }
+
+    .dias_1 {
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        font-size: 10pt;
+        color: #485C73;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dias_1 > p {
+        padding: 0 40px 0 0;
+    }
+
+    .dias_2, .dias_3, .dias_4, .dias_5 {
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        font-size: 10pt;
+        color: #485C73;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dias_2 > p {
+        padding: 0 39px 0 0;
+    }
+
+    .dias_3 > p {
+        padding: 0 36px 0 0;
+    }
+
+    .dias_4 > p {
+        padding: 0 34px 0 0;
+    }
+
+    .dias_5 > p {
+        padding: 0 32px 0 0;
+    }
+
+    #show_viagem {
+        background-color: #FAFAFA;
+        filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.25));
+        border-radius: 10%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 0 5px;
+    }
+
+    #show_viagem > p {
+        padding: 0 30px 0 0;
+    }
+
+    /* ------- POPUP ------- */
+    .popup {
+        display: none;
+    }
+
+    .conteudo_popup {
+        background-color: #FAFAFA;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        position: absolute;
+        width: 356px;
+        height: 495px;
+        left: 10px;
+        top: 150px;
+    }
+
+    .imagemcruzazul {
+        margin-left: 85%;
+        margin-top: 3%;
+        cursor: pointer;
+    }
+
+    .conteudo_popup > h1 {
+        font-family: Poppins, sans-serif;
+        color: #485C73;
+        margin-left: 5%;
+        margin-top: -3%;
+    }
+
+    .conteudo_popup > .pergunta {
+        font-family: Poppins, sans-serif;
+        font-weight: bold;
+        font-size: 10pt;
+        color: black;
+        margin-left: 5%;
+    }
+
+    .conteudo_popup > .resposta {
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        font-size: 8pt;
+        color: black;
+        margin-left: 5%;
+    }
+
+    .permissao {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        font-size: 9pt;
+        color: black;
+        margin-left: 3%;
+        margin-top: 1%;
+        width: 100%;
+    }
+
+    .permissao_input {
+        display: none;
+    }
+
+    .permissao_permissao {
+        width: 1.10em;
+        height: 1.10em;
+        border: 1px solid #C4C4C4;
+        border-radius: 50%;
+        margin-left: 1%;
+        margin-right: 2%;
+        box-sizing: border-box;
+        padding: 2px;
+    }
+
+    .permissao_permissao::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #485C73;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: transform 0.15s;
+    }
+
+    .permissao_input:checked + .permissao_permissao::after {
+        transform: scale(1);
+    }
+}
