@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/css_geral.css"/>
+    <link rel="stylesheet" type="text/css" href="css/css_viagem.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
+    <title>Agendar Viagem</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <img class="imagemseta" src="imagens/seta.png" alt="imagem de seta" width="20" height="30"/>
+        <img class="imagemmenu" src="imagens/menu.png" alt="imagem do menu" width="30" height="30"/>
+    </div>
+
+    <nav class="menu">
+        <img class="imagemcruzbranca" src="imagens/cruz_branca.png" alt="imagem da cruz" width="50" height="50"/>
+        <div><a href="perfil.html">Perfil</a></div>
+        <div><a href="calendario.html">Calendário</a></div>
+        <div><a href="definiçoes.html">Definições</a></div>
+    </nav>
+</header>
+
+<main>
+    <h1 class="titulo">Agendar viagem</h1>
+
+    <div id="campos">
+        <p>Para onde?</p>
+        <p>Quando?</p>
+        <p>Duração da partilha?</p>
+        <p>Descrição</p>
+
+
+        <label for="myRadioId_1" class="permissao">
+            <input type="radio" name="myRadioField" id="myRadioId_1" class="permissao_input">
+            <div class="permissao_permissao"></div>
+            Permitir partilhar o trajeto da viagem
+        </label>
+
+        <label for="myRadioId_2" class="permissao">
+            <input type="radio" name="myRadioField" id="myRadioId_2" class="permissao_input">
+            <div class="permissao_permissao"></div>
+            Permitir contribuição para a playlist da viagem
+        </label>
+
+        <button>Convidar</button>
+    </div>
+</main>
+
+<script src="js/js_geral.js"></script>
+</body>
+</html>
