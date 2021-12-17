@@ -25,15 +25,57 @@
 
 <main>
     <h1 class="titulo">Agendar viagem</h1>
-
+    <form action="resumoviagem.html" method="GET" 
     <div id="campos">
-        <p>Para onde?</p>
-        <p>Quando?</p>
-        <p>Duração da partilha?</p>
-        <p>Descrição</p>
-
-
-        <label for="myRadioId_1" class="permissao">
+        <div class="onde">
+            <label for="text">Para onde?</label>
+            <input type="text" name="text" id="text" required>
+        </div>
+        <div class="quando">
+            <p>Quando?</p>
+            <div class="quando_conteudo">
+                <div class="data_inicio">
+                    <label for="date">Início</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="data_fim">
+                    <label for="date">Fim</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+            </div>
+        </div> 
+        <div class="duracao">
+            <p>Duração da partilha?</p>
+            <div class="duracao_conteudo">
+                <div class="duracao_inicio">
+                    <label for="inicio">Hora de início</label>
+                    <select name="horainicio" id="horainicio">
+                        <option label="10.00h" value="10h"></option>
+                        <option label="11.00h" value="11h"></option>
+                    </select>
+                </div>
+                <div class="duracao_fim">
+                    <label for="inicio">Hora de fim</label>
+                    <select name="horafim" id="horafim">
+                        <option label="22.00h" value="22h"></option>
+                        <option label="23.00h" value="23h"></option>
+                    </select>
+                </div>
+            </div>
+        </div> 
+        <div class="descricao">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao"></textarea>
+        </div>
+        <div class="permissao">
+            <label for="trajeto">Permitir partilhar o trajeto da viagem</label>
+            <input type="checkbox" name="trajeto" id="trajeto">
+        </div>
+        <div class="permissao">
+            <label for="playlist">Permitir contribuição para a playlist da viagem</label>
+            <input type="checkbox" name="playlist" id="playlist">
+        </div>
+        <!--<label for="myRadioId_1" class="permissao">
             <input type="radio" name="myRadioField" id="myRadioId_1" class="permissao_input">
             <div class="permissao_permissao"></div>
             Permitir partilhar o trajeto da viagem
@@ -43,7 +85,7 @@
             <input type="radio" name="myRadioField" id="myRadioId_2" class="permissao_input">
             <div class="permissao_permissao"></div>
             Permitir contribuição para a playlist da viagem
-        </label>
+        </label>-->
 
         <button>Convidar</button>
     </div>
