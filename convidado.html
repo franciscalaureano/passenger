@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/css_resumoviagem.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8"/>
-    <title>Resumo Viagem</title>
+    <title>Convidar Amigo</title>
 </head>
 <body>
 
@@ -24,16 +24,17 @@
 </header>
 
 <main>
-    <h1 class="titulo">Resumo da viagem</h1>
-    
-    <div id="results">
-    <a href="/">Back to Form</a>
-    </div>
-    <a href="agendarviagem.html"><button>Retroceder</button></a>
-    <a href="index.html"><button>Confirmar</button></a>
+    <h1 class="titulo">Com quem queres viajar?</h1>
+    <form action="resumoviagem.html" method="GET">
+        <div class="onde">
+            <label for="text">Para onde?</label>
+            <input type="text" name="text" id="text" required>
+        </div>
+        <button type="submit">Convidar</button>
+    </form>
 </main>
 
 <script src="js/js_geral.js"></script>
-<script src="js/js_resumoviagem.js"></script>
+<!--<script src="js/js_resumoviagem.js"></script>-->
 </body>
 </html>
