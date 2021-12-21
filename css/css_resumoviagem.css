@@ -1,0 +1,43 @@
+@media only screen and (max-device-width: 850px) {
+    body {
+        background-color: #F5F5F5;
+    }
+
+    .imagemseta {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .titulo {
+        font-family: Poppins, sans-serif;
+        color: #485C73;
+        margin-left: 5%;
+    }
+
+    /* CONTEUDO */
+    #results {
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        font-size: 10pt;
+        color: black;
+        margin-left: 5%;
+    }
+
+    /* BOTÕES */
+    button {
+        background-color: #485C73;
+        font-family: Poppins, sans-serif;
+        color: white;
+        stroke: #485C73;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        border-color: #485C73;
+        margin-top: 30px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
