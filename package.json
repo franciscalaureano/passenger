@@ -1,5 +1,26 @@
 {
   "devDependencies": {
     "typescript": "^4.5.2"
-  }
+  },
+  "dependencies": {
+    "firebase": "^9.6.1"
+  },
+  "name": "passenger",
+  "description": "DI Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscalaureano/passenger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscalaureano/passenger/issues"
+  },
+  "homepage": "https://github.com/franciscalaureano/passenger#readme"
 }
