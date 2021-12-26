@@ -1,3 +1,4 @@
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
@@ -18,8 +19,29 @@ const firebaseConfig = {
   measurementId: "G-3PKJHYJ5K6"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(irebaseConfi);
+    
+    // make auth and firestore references
+    const db = firebase.firestore();
 
 // Get a reference to the database service
-const database = getDatabase(app);
+const database = firebase.getDatabase(app);
+
+const userId = document.getElementById("userId");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const age = document.getElementById("age");
+const addBtn = document.getElementById("addBtn");
+const updateBtn = document.getElementById("updateBtn");
+const removeBtn = document.getElementById("removeBtn");
+
+const database= firebase.database(); 
+
+addBtn.addEventListener('click',  (e) => {
+    e.preventDefault(); 
+    database.ref('/users/'+userId.value).set({
+        first_name: firstName.value,
+        last_name: lastName.value, 
+        age: age.value 
+    })
+});
