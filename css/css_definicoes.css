@@ -29,6 +29,10 @@
         color: #485C73;
     }
 
+    .perfil > .som > input {
+        width: 90%;
+    }
+
     /* BOTÃO */
     button {
         background: #FFFFFF;
