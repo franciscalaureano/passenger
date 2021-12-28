@@ -61,8 +61,8 @@
             </option>
         </select>
     </form>-->
-    <form action="resumo_convidado.html" method="GET">
-        <div class="convidado">
+    <form action="resumoconvidado.html" method="GET">
+        <!--<div class="convidado">
             <div class="convidado_selecionado">
                 <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
                 Francisca Laureano
@@ -79,12 +79,43 @@
                 <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
                 Rafaela Costa
             </div>
+        </div>-->
+        <input type="radio" name="Francisca Laureano" id="convidado1">
+        <input type="radio" name="Hugo Jordão" id="convidado2">
+        <input type="radio" name="Jorge Santos" id="convidado3">
+        <input type="radio" name="Rafaela Costa" id="convidado4">
+        <label for="convidado1">
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                <p>Francisca Laureano</p>
+            </div>
+        </label>
+        <label for="convidado2">
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                <p>Hugo Jordão</p>
+            </div>
+        </label>
+        <label for="convidado3">
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                <p>Jorge Santos</p>
+            </div>
+        </label>
+        <label for="convidado4">
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                <p>Rafaela Costa</p>
+            </div>
+        </label>
+        <div class="buttons">
+            <a href="resumoviagem.html"><button>Retroceder</button></a>
+            <a href="resumoconvidado.html"><button>Convidar</button></a>
         </div>
     </form>
-    <button type="submit">Convidar</button>
 </main>
 
 <script src="js/js_geral.js"></script>
-<script src="js/js_convidado.js"></script>
+<script src="js/js_resumoconvidado.js"></script>
 </body>
 </html>
