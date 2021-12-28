@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/css_geral.css"/>
-    <link rel="stylesheet" type="text/css" href="css/css_resumoviagem.css"/>
+    <link rel="stylesheet" type="text/css" href="css/css_convidado.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8"/>
     <title>Convidar Amigo</title>
@@ -25,16 +25,66 @@
 
 <main>
     <h1 class="titulo">Com quem queres viajar?</h1>
-    <form action="resumoviagem.html" method="GET">
-        <div class="onde">
-            <label for="text">Para onde?</label>
-            <input type="text" name="text" id="text" required>
+    <!--<form action="resumoviagem.html" method="GET">
+        <li>
+            <ul>
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Jorge Santos</ul>
+            <ul>
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Rafaela Costa</ul>
+            <ul>
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Hugo Jordão</ul>
+            <ul>
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Francisca Laureano</ul>
+        </li>
+    </form>-->
+    <!--<form action="resumo_convidado.html">
+        <select name="convidado" class="convidado_selecionado">
+            <option value="Francisca Laureano">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Francisca Laureano
+            </option>
+            <option value="Hugo Jordão">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Hugo Jordão
+            </option>
+            <option value="Jorge Santos">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Jorge Santos
+            </option>
+            <option value="Rafaela Costa">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Rafaela Costa
+            </option>
+        </select>
+    </form>-->
+    <form action="resumo_convidado.html" method="GET">
+        <div class="convidado">
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Francisca Laureano
+            </div>
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Hugo Jordão
+            </div>
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Jorge Santos
+            </div>
+            <div class="convidado_selecionado">
+                <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
+                Rafaela Costa
+            </div>
         </div>
-        <button type="submit">Convidar</button>
     </form>
+    <button type="submit">Convidar</button>
 </main>
 
 <script src="js/js_geral.js"></script>
-<!--<script src="js/js_resumoviagem.js"></script>-->
+<script src="js/js_convidado.js"></script>
 </body>
 </html>

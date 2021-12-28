@@ -29,18 +29,18 @@
         <div id="campos">
             <div class="onde">
                 <label for="text">Para onde?</label>
-                <input type="text" name="text" id="text" required>
+                <input type="text" name="Destino" id="text" required>
             </div>
             <div class="quando">
                 <p>Quando?</p>
                 <div class="quando_conteudo">
                     <div class="data_inicio">
                         <label for="date">Início</label>
-                        <input type="date" name="date" id="date" required>
+                        <input type="date" name="Data de Inicio" id="date" required>
                     </div>
                     <div class="data_fim">
                         <label for="date">Fim</label>
-                        <input type="date" name="date" id="date" required>
+                        <input type="date" name="Data de Fim" id="date" required>
                     </div>
                 </div>
             </div> 
@@ -49,14 +49,14 @@
                 <div class="duracao_conteudo">
                     <div class="duracao_inicio">
                         <label for="inicio">Hora de início</label>
-                        <select name="horainicio" id="horainicio">
+                        <select name="Hora de Inicio" id="horainicio">
                             <option label="10.00h" value="10h"></option>
                             <option label="11.00h" value="11h"></option>
                         </select>
                     </div>
                     <div class="duracao_fim">
                         <label for="inicio">Hora de fim</label>
-                        <select name="horafim" id="horafim">
+                        <select name="Hora de Fim" id="horafim">
                             <option label="22.00h" value="22h"></option>
                             <option label="23.00h" value="23h"></option>
                         </select>
@@ -65,15 +65,15 @@
             </div> 
             <div class="descricao">
                 <label for="descricao">Descrição</label>
-                <textarea name="descricao" id="descricao"></textarea>
+                <textarea name="Descrição" id="descricao"></textarea>
             </div>
             <div class="permissao">
                 <label for="trajeto">Permitir partilhar o trajeto da viagem</label>
-                <input type="checkbox" name="trajeto" id="trajeto">
+                <input type="checkbox" name="Permissão de Trajeto" id="trajeto">
             </div>
             <div class="permissao">
                 <label for="playlist">Permitir contribuição para a playlist da viagem</label>
-                <input type="checkbox" name="playlist" id="playlist">
+                <input type="checkbox" name="Permissão de Playlist" id="playlist">
             </div>
             <button type="submit">Convidar</button>
         </div>
