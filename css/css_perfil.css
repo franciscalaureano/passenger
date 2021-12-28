@@ -31,6 +31,14 @@
 
     .imagemperfil {
         margin-left: 30%;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #485C73;
+    }
+
+    .imagemeditar {
+        margin-left: -11%;
+        margin-bottom: -2%;
     }
 
     input {
@@ -39,6 +47,10 @@
         padding: 5px 5px 5px 5px;
         border: 2px solid #E5E5E5;
         width: 90%;
+    }
+
+    #file {
+        display: none;
     }
 
     /* BOTÃO */

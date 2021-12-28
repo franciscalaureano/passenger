@@ -27,9 +27,12 @@
     <h1 class="titulo">Perfil</h1>
 
     <div class="perfil">
-        <img class="imagemperfil" src="imagens/perfil.png" alt="imagem perfil" width="100" height="100"/>
-        <input type="file" name="" id="file" accept="image/*">
-        <label for="file">Edit Pic</label>
+        <div class="change_photo">
+            <img class="imagemperfil" id="photo" src="imagens/perfil.png" alt="imagem perfil" width="100" height="100"/>
+            <input type="file" name="" id="file" accept="image/*">
+            <label for="file" id="uploadbtn"><img class="imagemeditar" id="edit_photo" src="imagens/edit_photo.png" 
+                alt="imagem editar photo" width="30" height="30"/></label>
+        </div>
         <div class="nome_utilizador">
             <p>Nome de Utilizador</p>
             <input type="text" name="">
@@ -39,7 +42,7 @@
             <input type="email" name="">
         </div>
         <div class="password">
-            <p>Password</p>
+            <p>Palavra-passe</p>
             <input type="password" name="">
         </div>
         <button>Guardar</button>
@@ -48,5 +51,6 @@
 </main>
 
 <script src="js/js_geral.js"></script>
+<script src="js/js_perfil.js"></script>
 </body>
 </html>
