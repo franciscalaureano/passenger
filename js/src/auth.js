@@ -22,6 +22,7 @@ createForm.addEventListener("submit", (e) => {
     .add({
       title: createForm.title.value,
       content: createForm.content.value,
+      image: createForm.image.value,
     })
     .then(() => {
       // close the create modal & reset form

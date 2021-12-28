@@ -1,5 +1,6 @@
-* {
-  outline: 1px solid red;
+div {
+  text-align: center;
+  align-content: center;
 }
 body {
   background-color: #485c73;
@@ -13,8 +14,8 @@ h1 {
 }
 p {
   font-size: 11pt;
-  margin: 0;
   max-width: 200px;
+  margin: 0 auto;
 }
 input {
   width: 100%;
@@ -55,4 +56,17 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.bottom {
+  margin-top: 20px;
+}
+#signupError,
+#loginError {
+  font-size: 9pt;
+  color: red;
 }
