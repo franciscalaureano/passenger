@@ -15,8 +15,11 @@ loginForm.addEventListener("submit", (e) => {
     })
     .then((cred) => {
       console.log(cred.user);
-
       loginForm.reset();
+      return db.collection("users").doc(cred.user.uid).update({
+        lat: lat,
+        long: long,
+      });
     })
     .then(() => {
       location.href = "index.html";
