@@ -5,14 +5,10 @@ window.onload = function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 };
+let lat;
+let long;
 // coordenadas da posição atual do utilizador
 function showPosition(position) {
-  const lat = position.coords.latitude;
-  const long = position.coords.longitude;
-
-  document.getElementById("latitude").innerHTML = lat;
-  document.getElementById("latitude").style.display = "none";
-
-  document.getElementById("longitude").innerHTML = long;
-  document.getElementById("longitude").style.display = "none";
+  lat = position.coords.latitude;
+  long = position.coords.longitude;
 }
