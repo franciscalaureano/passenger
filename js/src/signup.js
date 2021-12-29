@@ -16,6 +16,8 @@ signupForm.addEventListener("submit", (e) => {
     .then((cred) => {
       return db.collection("users").doc(cred.user.uid).set({
         bio: signupForm["signup-bio"].value,
+        lat: signupForm["latitude"].value,
+        long: signupForm["longitude"].value,
       });
     })
     .then(() => {
