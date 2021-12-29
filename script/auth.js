@@ -1,4 +1,4 @@
- //------------------------
+//------------------------
 //------LOCALIZAÇÃO-------
 //------------------------
 window.onload = function getLocation() {
@@ -25,9 +25,9 @@ window.onload = function getLocation() {
 //------------------------
 auth.onAuthStateChanged((user) => {
   if (user) {
-    db.collection("guides").onSnapshot(
+    db.collection("users").onSnapshot(
       (snapshot) => {
-        setupGuides(snapshot.docs);
+        //setupGuides(snapshot.docs);
         setupUI(user);
       },
       (err) => {
@@ -36,7 +36,7 @@ auth.onAuthStateChanged((user) => {
     );
   } else {
     setupUI();
-    setupGuides([]);
+    //setupGuides([]);
   }
 });
 
@@ -81,10 +81,15 @@ signupForm.addEventListener("submit", (e) => {
       });
 
     })
-  .then(() => {
-      location.href = "index.html";
-    });
-});
+  }).then(() => {
+    // close the signup modal & reset form
+    /*const modal = document.querySelector('#modal-signup');
+    M.Modal.getInstance(modal).close();
+    signupForm.reset();*/
+   location.href = "index.html";
+  })
+  ;
+
 
 //logout
 const logout = document.querySelector("#logout");

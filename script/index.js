@@ -1,8 +1,30 @@
 const guideList = document.querySelector(".guides");
 const loggedOutLinks = document.querySelectorAll(".logged-out");
 const loggedInLinks = document.querySelectorAll(".logged-in");
-const accountDetails = document.querySelector(".account-details");
+const accountDetails = document.querySelector("#mapid");
 const setupUI = (user) => {
+  if (user) {
+    // account info
+    db.collection('users').doc(user.uid).get().then(doc => {
+      const html = `
+        <div>Logged in as ${user.email}</div>
+        <div>${doc.data().lat}</div>
+      `;
+      accountDetails.innerHTML = html;
+    });
+    // toggle user UI elements
+    loggedInLinks.forEach(item => item.style.display = 'block');
+    loggedOutLinks.forEach(item => item.style.display = 'none');
+  } else {
+    // clear account info
+    accountDetails.innerHTML = '';
+    // toggle user elements
+    loggedInLinks.forEach(item => item.style.display = 'none');
+    loggedOutLinks.forEach(item => item.style.display = 'block');
+  }
+};
+
+/*onst setupUI = (user) => {
   if (user) {
     db.collection("users")
       .doc(user.uid)
@@ -52,7 +74,7 @@ const setupGuides = (data) => {
     guideList.innerHTML =
       '<h5 class="center-align">Login to view the Guides </h5>';
   }
-};
+};*/
 document.addEventListener("DOMContentLoaded", function () {
   var modals = document.querySelectorAll(".modal");
   M.Modal.init(modals);

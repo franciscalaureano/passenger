@@ -1,11 +1,26 @@
 const mymap = document.querySelector("#mapid");
-setupUI = (user) => {
+const setupUI = (user) => {
   if (user) {
-db.collection("users").doc(user.uid).get().then( (doc) => {
-console.log(doc.data().bio)
+    // account info
+    db.collection('users').doc(user.uid).get().then(doc => {
+      const html = `
+        <div>Logged in as ${user.email}</div>
+        <div>${doc.data().bio}</div>
+      `;
+      mymap.innerHTML = html;
+    });
+    // toggle user UI elements
+    loggedInLinks.forEach(item => item.style.display = 'block');
+    loggedOutLinks.forEach(item => item.style.display = 'none');
+  } else {
+    // clear account info
+    accountDetails.innerHTML = '';
+    // toggle user elements
+    loggedInLinks.forEach(item => item.style.display = 'none');
+    loggedOutLinks.forEach(item => item.style.display = 'block');
+  }
+};
 
-})
-  }}
 
   //------------------
   //-------MAPA-------
