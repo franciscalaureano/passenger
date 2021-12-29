@@ -15,8 +15,7 @@ loginForm.addEventListener("submit", (e) => {
     })
     .then((cred) => {
       console.log(cred.user);
-      const modal = document.querySelector("#modal-login");
-      M.Modal.getInstance(modal).close();
+
       loginForm.reset();
     })
     .then(() => {
