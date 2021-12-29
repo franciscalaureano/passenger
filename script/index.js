@@ -11,8 +11,15 @@ const setupUI = (user) => {
         const html = `
       <div> Logged in as ${user.email}</div>
       <div>${doc.data().bio}</div>
-      `;
+      <div>${doc.data().lat}</div>
+      <div>${doc.data().long}</div>
+      `
+      var cord_lat= doc.data().lat;
+      var cord_long= doc.data().long;
+      
+      ;
         accountDetails.innerHTML = html;
+
       });
 
     // toggle user UI elements
@@ -25,6 +32,7 @@ const setupUI = (user) => {
     loggedOutLinks.forEach((item) => (item.style.display = "block"));
   }
 };
+
 // setup guides
 const setupGuides = (data) => {
   if (data.length) {

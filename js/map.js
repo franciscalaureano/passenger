@@ -1,22 +1,16 @@
-//------------------------
-//------LOCALIZAÇÃO-------
-//------------------------
-window.onload = function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-};
-// coordenadas da posição atual do utilizador
-function showPosition(position) {
-  var lat = position.coords.latitude;
-  var long = position.coords.longitude;
+const mymap = document.querySelector("#mapid");
+setupUI = (user) => {
+  if (user) {
+db.collection("users").doc(user.uid).get().then( (doc) => {
+console.log(doc.data().bio)
+
+})
+  }}
 
   //------------------
   //-------MAPA-------
   //------------------
-  var map = L.map("mapid").setView([lat, long], 18);
+  /*var map = L.map("mapid").setView([db.collection("users").doc.data().lat, db.collection("users").doc.data().long], 18);
 
   // deifnir tile do mapa
   var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -32,5 +26,5 @@ function showPosition(position) {
     fillColor: "#485C73",
     fillOpacity: 1,
     radius: 5,
-  }).addTo(map);
-}
+  }).addTo(map);*/
+
