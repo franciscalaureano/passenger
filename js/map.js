@@ -1,22 +1,45 @@
-//------------------------
-//------LOCALIZAÇÃO-------
-//------------------------
-window.onload = function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition);
+
+/* var map = L.map("mapid").setView([40.2018, -8.4256], 18);
+
+// deifnir tile do mapa
+var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+});
+osm.addTo(map);
+ */
+
+const mymap = document.querySelector("#mapid");
+const setupUI = (user) => {
+  if (user) {
+    // account info
+    db.collection("users")
+      .doc(user.uid)
+      .get()
+      .then((doc) => {
+        const html = `
+        <div>Logged in as ${user.email}</div>
+        <div>${doc.data().bio}</div>
+      `;
+        mymap.innerHTML = html;
+      });
+    // toggle user UI elements
+    loggedInLinks.forEach((item) => (item.style.display = "block"));
+    loggedOutLinks.forEach((item) => (item.style.display = "none"));
   } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    // clear account info
+    accountDetails.innerHTML = "";
+    // toggle user elements
+    loggedInLinks.forEach((item) => (item.style.display = "none"));
+    loggedOutLinks.forEach((item) => (item.style.display = "block"));
   }
 };
-// coordenadas da posição atual do utilizador
-function showPosition(position) {
-  var lat = position.coords.latitude;
-  var long = position.coords.longitude;
 
-  //------------------
-  //-------MAPA-------
-  //------------------
-  var map = L.map("mapid").setView([lat, long], 18);
+//------------------
+//-------MAPA-------
+//------------------
+/*var map = L.map("mapid").setView([db.collection("users").doc.data().lat, db.collection("users").doc.data().long], 18);
+
 
   // deifnir tile do mapa
   var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -32,5 +55,6 @@ function showPosition(position) {
     fillColor: "#485C73",
     fillOpacity: 1,
     radius: 5,
-  }).addTo(map);
-}
+
+  }).addTo(map);*/
+
