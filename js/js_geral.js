@@ -9,11 +9,13 @@ menu.addEventListener("click", function (evt) {
 });
 
 document.addEventListener("click", function (event) {
-  console.log("document click", event);
+  /*console.log("document click", event);*/
   var isClickInsideButton = menu.contains(event.target);
   if (!isClickInsideButton) {
     document.querySelector("nav").classList.remove("show");
-    setTimeout(() => {map.style.zIndex = "1"}, 500);
+    setTimeout(() => {
+      map.style.zIndex = "1";
+    }, 500);
   }
 });
 

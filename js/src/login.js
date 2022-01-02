@@ -22,6 +22,7 @@ loginForm.addEventListener("submit", (e) => {
       });
     })
     .then(() => {
+      console.log("Logged In");
       location.href = "home.html";
     });
 });
