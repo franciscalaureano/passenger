@@ -1,0 +1,125 @@
+@media only screen and (max-device-width: 850px) {
+    body {
+        background-color: #F5F5F5;
+    }
+
+    .imagemseta {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .titulo {
+        font-family: Poppins, sans-serif;
+        color: #485C73;
+        margin-left: 5%;
+    }
+
+    label, .quando, .duracao {
+        font-family: Poppins, sans-serif;
+        font-weight: normal;
+        font-size: 10pt;
+        color: black;
+        margin-left: 5%;
+    }
+
+    /* PARA ONDE? */
+    .onde {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onde > input {
+        margin-left: 5%;
+        margin-right: 5%;
+        background: rgba(72, 92, 115, 0.5);
+        border-color: rgba(72, 92, 115, 0.5);
+        border-radius: 6px;
+        color: white;
+        padding: 5px 0 5px 0;
+    }
+
+    /* QUANDO? */
+    .quando {
+        padding-top: 10px;
+    }
+
+    .quando_conteudo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .data_inicio, .data_fim {
+        display: flex;
+        flex-direction: column;
+        padding-right: 15px;
+    }
+
+    .data_inicio > input, .data_fim > input {
+        background: rgba(72, 92, 115, 0.5);
+        border-color: rgba(72, 92, 115, 0.5);
+        border-radius: 6px;
+        color: white;
+        padding: 5px 0 5px 0;
+    }
+
+    /* DURAÇÃO? */
+    .duracao {
+        padding-top: 15px;
+    }
+    
+    .duracao_conteudo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .duracao_inicio, .duracao_fim {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+        width: 50%;
+    }
+
+    .duracao_inicio > select, .duracao_fim > select {
+        background: rgba(72, 92, 115, 0.5);
+        border-color: rgba(72, 92, 115, 0.5);
+        border-radius: 6px;
+        color: white;
+        padding: 5px 0 5px 0;
+    }
+
+    /* DESCRIÇÃO */
+    .descricao {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .descricao > textarea {
+        background: rgba(72, 92, 115, 0.5);
+        border-color: rgba(72, 92, 115, 0.5);
+        border-radius: 6px;
+        color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 5px 0 5px 0;
+    }
+
+    /* PERMISSÕES */
+    .permissao {
+        padding-top: 10px;
+    }
+
+    /* BOTÃO */
+    button {
+        background-color: #485C73;
+        font-family: Poppins, sans-serif;
+        color: white;
+        stroke: #485C73;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        border-color: #485C73;
+        box-shadow: 0px 4px 5px rgba(24, 24, 24, 0.3);
+        margin-top: 30px;
+        margin-left: 140px;
+    }
+}
