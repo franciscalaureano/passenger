@@ -1,3 +1,4 @@
+
 /* var map = L.map("mapid").setView([40.2018, -8.4256], 18);
 
 // deifnir tile do mapa
@@ -39,6 +40,7 @@ const setupUI = (user) => {
 //------------------
 /*var map = L.map("mapid").setView([db.collection("users").doc.data().lat, db.collection("users").doc.data().long], 18);
 
+
   // deifnir tile do mapa
   var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
@@ -53,4 +55,6 @@ const setupUI = (user) => {
     fillColor: "#485C73",
     fillOpacity: 1,
     radius: 5,
+
   }).addTo(map);*/
+
