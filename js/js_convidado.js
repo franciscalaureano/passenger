@@ -43,13 +43,3 @@
     }
 }*/
 
-const itemElement = document.querySelector("div");
-
-itemElement.addEventListener("click", () => {
-    if (itemElement.classList.contains("convidado_selecionado--selected")) {
-        this._deselect(itemElement);
-    } else {
-        this._select(itemElement);
-    }
-})
-
