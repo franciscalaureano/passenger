@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/css_geral.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 
     <!-- Coisas da Leaflet -->
     <link
@@ -25,6 +25,30 @@
     <title>Passenger</title>
   </head>
   <body>
+    <header>
+      <div>
+        <img
+          class="imagemmenu"
+          src="imagens/menu.png"
+          alt="imagem do menu"
+          width="30"
+          height="30"
+        />
+      </div>
+      <nav class="menu">
+        <img
+          class="imagemcruzbranca"
+          src="imagens/cruz_branca.png"
+          alt="imagem da cruz"
+          width="50"
+          height="50"
+        />
+        <div><a href="perfil.html">Perfil</a></div>
+        <div><a href="calendario.html">Calendário</a></div>
+        <div><a href="definicoes.html">Definições</a></div>
+      </nav>
+    </header>
+
     <!-- MAPA -->
     <div id="mapid"></div>
     <!-- ------------- -->
@@ -54,7 +78,7 @@
       db.settings({ timestampsInSnapshots: true });
     </script>
     <script src="js/src/auth2.js"></script>
-
+    <script src="js/js_geral.js"></script>
   </body>
 
   <script></script>
