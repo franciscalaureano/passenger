@@ -22,6 +22,6 @@ loginForm.addEventListener("submit", (e) => {
       });
     })
     .then(() => {
-      location.href = "index.html";
+      location.href = "home.html";
     });
 });
