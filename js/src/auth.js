@@ -1,4 +1,4 @@
-auth.onAuthStateChanged((user) => {
+/* auth.onAuthStateChanged((user) => {
   if (user) {
     db.collection("guides").onSnapshot(
       (snapshot) => {
@@ -14,6 +14,28 @@ auth.onAuthStateChanged((user) => {
     setupGuides([]);
   }
 });
+ */
+
+/* auth.onAuthStateChanged((user) => {
+  if (user) {
+    db.collection("users").onSnapshot(
+      (snapshot) => {
+        setupGuides(snapshot.docs);
+        setupUI(user);
+      },
+      (err) => {
+        console.log(err.message);
+      }
+    );
+  } else {
+    setupUI();
+    setupGuides([]);
+  }
+}); */
+
+/* db.collection("users").onSnapshot((snapshot) => {
+  setupUsers(snapshot.docs);
+}); */
 
 const createForm = document.querySelector("#create-form");
 createForm.addEventListener("submit", (e) => {
@@ -22,7 +44,7 @@ createForm.addEventListener("submit", (e) => {
     .add({
       title: createForm.title.value,
       content: createForm.content.value,
-      image: createForm.image.value,
+      /*  image: createForm.image.value, */
     })
     .then(() => {
       // close the create modal & reset form
@@ -49,6 +71,7 @@ signupForm.addEventListener("submit", (e) => {
     .then((cred) => {
       return db.collection("users").doc(cred.user.uid).set({
         bio: signupForm["signup-bio"].value,
+        email: signupForm["signup-email"].value,
       });
     })
     .then(() => {
