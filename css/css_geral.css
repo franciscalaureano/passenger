@@ -1,6 +1,6 @@
 @media only screen and (max-device-width: 850px) {
     body {
-        background-color: #F5F5F5;
+        background-color: #000000;
     }
 
     .imagemseta {
@@ -15,12 +15,13 @@
     }
 
     .imagemmenu {
-        margin-top: 2%;
-        margin-left: 75%;
+        position: absolute;
+       top: 3%;
+       right: 5%;
+       z-index: 2;
     }
 
     nav {
-        position: absolute;
         right: -500px;
         background-color: #485C73;
         transition: right 1s;

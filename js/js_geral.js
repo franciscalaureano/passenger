@@ -1,12 +1,11 @@
 /* APARECER O MENU */
 var menu = document.querySelector(".imagemmenu");
 var map = document.querySelector("#mapid");
-map.style.zIndex = "1";
 
 menu.addEventListener("click", function (evt) {
   console.log("button click", evt);
   document.querySelector("nav").classList.toggle("show");
-  map.style.zIndex = "-100";
+  map.style.zIndex = "-1";
 });
 
 document.addEventListener("click", function (event) {
@@ -14,7 +13,7 @@ document.addEventListener("click", function (event) {
   var isClickInsideButton = menu.contains(event.target);
   if (!isClickInsideButton) {
     document.querySelector("nav").classList.remove("show");
-    map.style.zIndex = "1";
+    setTimeout(() => {map.style.zIndex = "1"}, 500);
   }
 });
 
