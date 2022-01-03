@@ -22,14 +22,14 @@ body {
 
 .imagemviagem {
   position: absolute;
-  left: 310px;
-  top: 660px;
+  left: 300px;
+  top: 655px;
   z-index: 2;
 }
 
 .imagemamigos {
   position: absolute;
-  left: 260px;
-  top: 660px;
+  left: 250px;
+  top: 655px;
   z-index: 2;
 }
