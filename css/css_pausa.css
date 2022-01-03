@@ -1,0 +1,26 @@
+@media only screen and (max-device-width: 850px) {
+    body {
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .titulo {
+        font-family: Poppins, sans-serif;
+        font-weight: bold;
+        color: #485C73;
+        font-size: 30pt;
+    }
+
+    .subtitulo {
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        color: #485C73;
+        font-size: 15pt;
+    }
+}
