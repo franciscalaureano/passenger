@@ -20,6 +20,7 @@ const setupUsers = (data) => {
             <div> 
                 <h1>${user.username}</h1>
                 <h2>${user.email}<h2>
+                
             </div>
           </div>
           
