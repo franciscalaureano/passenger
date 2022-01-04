@@ -2,9 +2,34 @@ body {
   margin: 0;
 }
 
+.imagemmenu {
+  top: 4%;
+}
+
 #mapid {
   display: flex;
   height: 100vh;
   width: 100%;
   z-index: 1;
+}
+
+.imagempausa {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  z-index: 2;
+}
+
+.imagemviagem {
+  position: absolute;
+  left: 300px;
+  top: 655px;
+  z-index: 2;
+}
+
+.imagemamigos {
+  position: absolute;
+  left: 250px;
+  top: 655px;
+  z-index: 2;
 }
