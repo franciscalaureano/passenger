@@ -1,69 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/css_geral.css"/>
-    <link rel="stylesheet" type="text/css" href="css/css_convidado.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta charset="UTF-8"/>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css_geral.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_convidado.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/convidados.css" />
     <title>Convidar Amigo</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          class="imagemseta"
+          src="imagens/seta.png"
+          alt="imagem de seta"
+          width="20"
+          height="30"
+        />
+        <img
+          class="imagemmenu"
+          src="imagens/menu.png"
+          alt="imagem do menu"
+          width="30"
+          height="30"
+        />
+      </div>
 
-<header>
-    <div>
-        <img class="imagemseta" src="imagens/seta.png" alt="imagem de seta" width="20" height="30"/>
-        <img class="imagemmenu" src="imagens/menu.png" alt="imagem do menu" width="30" height="30"/>
-    </div>
-
-    <nav class="menu">
-        <img class="imagemcruzbranca" src="imagens/cruz_branca.png" alt="imagem da cruz" width="50" height="50"/>
+      <nav class="menu">
+        <img
+          class="imagemcruzbranca"
+          src="imagens/cruz_branca.png"
+          alt="imagem da cruz"
+          width="50"
+          height="50"
+        />
         <div><a href="perfil.html">Perfil</a></div>
         <div><a href="calendario.html">Calendário</a></div>
         <div><a href="definicoes.html">Definições</a></div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
-    <h1 class="titulo">Com quem queres viajar?  </h1>
-    <form action="resumoconvidado.html" method="GET">
-        <div>
-            <input type="radio" name="Francisca Laureano" id="convidado1">
-            <input type="radio" name="Hugo Jordão" id="convidado2">
-            <input type="radio" name="Jorge Santos" id="convidado3">
-            <input type="radio" name="Rafaela Costa" id="convidado4">
-            <label for="convidado1">
-                <div class="convidado_selecionado">
-                    <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
-                    <p>Francisca Laureano</p>
-                </div>
-            </label>
-            <label for="convidado2">
-                <div class="convidado_selecionado">
-                    <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
-                    <p>Hugo Jordão</p>
-                </div>
-            </label>
-            <label for="convidado3">
-                <div class="convidado_selecionado">
-                    <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
-                    <p>Jorge Santos</p>
-                </div>
-            </label>
-            <label for="convidado4">
-                <div class="convidado_selecionado">
-                    <img class="imagem_pessoa" src="imagens/perfil.png" alt="imagem da pessoa" width="40" height="40"/>
-                    <p>Rafaela Costa</p>
-                </div>
-            </label>
-            <div class="buttons">
-                <a href="resumoviagem.html"><button>Retroceder</button></a>
-                <a href="resumoconvidado.html"><button>Convidar</button></a>
-            </div>
+    <main>
+      <h4 class="titulo">Com quem queres viajar?</h4>
+      <form id="convidar-form">
+        <div class="guides"></div>
+        <!-- <input type="submit" value="convidar" /> -->
+        <div class="buttons">
+          <a href="resumoviagem.html"><button>Retroceder</button></a>
+          <a href="resumoconvidado.html" type="submit"
+            ><button>Convidar</button></a
+          >
         </div>
-    </form>
-</main>
+      </form>
 
-<script src="js/js_geral.js"></script>
-<script src="js/js_resumoconvidado.js"></script>
-</body>
+      <!-- <form action="resumoconvidado.html" method="GET">
+        <div>
+          <input type="radio" name="Francisca Laureano" id="convidado1" />
+          <input type="radio" name="Hugo Jordão" id="convidado2" />
+          <input type="radio" name="Jorge Santos" id="convidado3" />
+          <input type="radio" name="Rafaela Costa" id="convidado4" />
+          <label for="convidado1">
+            <div class="convidado_selecionado">
+              <img
+                class="imagem_pessoa"
+                src="imagens/perfil.png"
+                alt="imagem da pessoa"
+                width="40"
+                height="40"
+              />
+              <p>Francisca Laureano</p>
+            </div>
+          </label>
+          <label for="convidado2">
+            <div class="convidado_selecionado">
+              <img
+                class="imagem_pessoa"
+                src="imagens/perfil.png"
+                alt="imagem da pessoa"
+                width="40"
+                height="40"
+              />
+              <p>Hugo Jordão</p>
+            </div>
+          </label>
+          <label for="convidado3">
+            <div class="convidado_selecionado">
+              <img
+                class="imagem_pessoa"
+                src="imagens/perfil.png"
+                alt="imagem da pessoa"
+                width="40"
+                height="40"
+              />
+              <p>Jorge Santos</p>
+            </div>
+          </label>
+          <label for="convidado4">
+            <div class="convidado_selecionado">
+              <img
+                class="imagem_pessoa"
+                src="imagens/perfil.png"
+                alt="imagem da pessoa"
+                width="40"
+                height="40"
+              />
+              <p>Rafaela Costa</p>
+            </div>
+          </label>
+          <div class="buttons">
+            <a href="resumoviagem.html"><button>Retroceder</button></a>
+            <a href="resumoconvidado.html"><button>Convidar</button></a>
+          </div>
+        </div>
+      </form> -->
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="js/src/firebase.js"></script>
+    <script src="js/src/agendarviagem.js"></script>
+    <script src="js/src/convidado.js"></script>
+    <script src="js/src/convidar.js"></script>
+    <script src="js/js_geral.js"></script>
+    <script src="js/js_resumoconvidado.js"></script>
+  </body>
 </html>

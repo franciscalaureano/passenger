@@ -1,5 +1,3 @@
-const guideList = document.querySelector(".guides");
-
 db.collection("users").onSnapshot((snapshot) => {
   setupUsers(snapshot.docs);
 });
