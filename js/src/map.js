@@ -14,6 +14,7 @@ auth.onAuthStateChanged((user) => {
         console.log(cord_long);
 
         var map = L.map("mapid").setView([cord_lat, cord_long], 18);
+  
 
         // deifnir tile do mapa
         var osm = L.tileLayer(
@@ -24,11 +25,29 @@ auth.onAuthStateChanged((user) => {
           }
         );
         osm.addTo(map);
+       
+
+        db.collection("ImageLinks").onSnapshot((snapshot) => {
+          setupImgs(snapshot.docs);
+        });
+        const setupImgs = (data) => {
+          data.forEach((doc) => {
+           const img = doc.data();
+           var imageUrl= img.ImageUrl;
+           var greenIcon = L.icon({
+            iconUrl: imageUrl,
+            iconSize:     [40, 40], // size of the icon
+            iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+            popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+        });
+        L.marker([40.1962412, -8.4339997], {icon: greenIcon}).addTo(map)
+           
+          });
+        };
 
         db.collection("users").onSnapshot((snapshot) => {
           setupUsers(snapshot.docs);
         });
-
         const setupUsers = (data) => {
           data.forEach((doc) => {
             const user = doc.data();
