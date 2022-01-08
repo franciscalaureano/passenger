@@ -141,6 +141,15 @@
           <button type="submit">Agendar</button>
         </div>
       </form>
+
+      <div id="goback-container" style="display: none">
+        <p style="text-align: center;">Deseja sair sem guardar alterações?</p>
+        <div id="div-buttons" style="text-align: center;">
+            <button id="yes" onclick="goAway()">Sim</button>
+            <button id="no" onclick="dontGo()">Não</button>
+        </div> 
+        <p></p>
+      </div>
     </main>
 
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
@@ -148,7 +157,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
     <script src="js/src/firebase.js"></script>
     <script src="js/src/agendarviagem.js"></script>
-    <script src="js/js_geral.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
 
