@@ -22,15 +22,17 @@ document.addEventListener("click", function (event) {
 /* RETROCEDER A PARTIR DA SETA */
 var backBtn = document.querySelector(".imagemseta");
 backBtn.addEventListener("click", () => {
-  window.history.back();
+  const container = document.getElementById("goback-container")
+  container.style.display = "block"
 });
 
-function sucessoViagem(){
-  const alert = document.getElementById("photo-alert")
-  alert.style.display = "block";
+function dontGo(){
+    const container = document.getElementById("goback-container")
+    container.style.display = "none"
 }
 
-function closeAlert(){
-  const alert = document.getElementById("photo-alert")
-  alert.style.display = "none";
+function goAway(){
+    const container = document.getElementById("goback-container")
+    container.style.display = "none"
+    window.history.back();
 }
