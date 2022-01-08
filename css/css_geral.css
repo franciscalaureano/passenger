@@ -1,63 +1,65 @@
 @media only screen and (max-device-width: 850px) {
-    body {
-        background-color: #000000;
-    }
+  body {
+    background-color: #000000;
+  }
 
-    .imagemseta {
-        margin-top: 5%;
-        margin-left: 5%;
-    }
+  .imagemseta {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
 
-    .titulo {
-        font-family: Poppins, sans-serif;
-        color: #485C73;
-        margin-left: 5%;
-    }
+  .titulo {
+    font-size: 26pt;
+    font-family: Poppins, sans-serif;
+    color: #485c73;
+    margin-left: 5%;
+    margin: 10px 0;
+  }
 
-    .imagemmenu {
-        position: absolute;
-        top: 3%;
-        right: 5%;
-        z-index: 5;
-    }
+  .imagemmenu {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    z-index: 5;
+  }
 
-    nav {
-        right: -500px;
-        background-color: #485C73;
-        transition: right 1s;
-        padding-top: 50px;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        z-index: 5;
-    }
+  nav {
+    right: -500px;
+    background-color: #485c73;
+    transition: right 1s;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 5;
+  }
 
-    nav.show {
-        right: 0;
-    }
+  nav.show {
+    right: 0;
+  }
 
-    .menu {
-        color: white;
-        font-family: Poppins, sans-serif;
-        font-weight: bold;
-        font-size: 25pt;
-        position: fixed;
-        margin: 0;
-        top: 0;
-        text-align: left;
-    }
+  .menu {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 25pt;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    text-align: left;
+  }
 
-    .menu > div {
-        padding: 20px 0 20px 0;
-    }
+  .menu > div {
+    padding: 20px 0 20px 0;
+  }
 
-    a {
-        text-decoration: none;
-        color: white;
-        margin-left: 5%;
-    }
+  a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5%;
+  }
 
-    .imagemcruzbranca {
-        margin-left: 80%;
-    }
+  .imagemcruzbranca {
+    margin-left: 80%;
+  }
 }
