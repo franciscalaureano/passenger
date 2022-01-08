@@ -1,3 +1,3 @@
 # passenger
-DI Project Pasenger test
+DI Project Pasenger
 
