@@ -24,3 +24,9 @@ var backBtn = document.querySelector(".imagemseta");
 backBtn.addEventListener("click", () => {
   window.history.back();
 });
+
+/* RETROCEDER A PARTIR DO BOTÃO PAUSA */
+var backBtnPause = document.querySelector(".imagemplay");
+backBtnPause.addEventListener("click", () => {
+  window.history.back();
+});
