@@ -1,4 +1,3 @@
-
 /* var map = L.map("mapid").setView([40.2018, -8.4256], 18);
 
 // deifnir tile do mapa
@@ -57,4 +56,3 @@ const setupUI = (user) => {
     radius: 5,
 
   }).addTo(map);*/
-

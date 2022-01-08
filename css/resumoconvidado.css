@@ -1,0 +1,52 @@
+label {
+  display: flex;
+}
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 11pt;
+}
+h2 {
+  font-weight: 300;
+}
+.titulo {
+  margin-left: 20px !important;
+}
+h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20pt;
+}
+
+.imagem {
+  margin-right: 15px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 7px #868686;
+}
+.user {
+  display: flex;
+  border-radius: 10px;
+
+  padding: 10px;
+  margin: 0;
+}
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}

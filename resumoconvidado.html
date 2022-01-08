@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/css_geral.css"/>
-    <link rel="stylesheet" type="text/css" href="css/css_resumoconvidado.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta charset="UTF-8"/>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css_geral.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_resumoconvidado.css" />
+    <link rel="stylesheet" href="css/resumoconvidado.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
     <title>Resumo Convidado</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          class="imagemseta"
+          src="imagens/seta.png"
+          alt="imagem de seta"
+          width="20"
+          height="30"
+        />
+        <img
+          class="imagemmenu"
+          src="imagens/menu.png"
+          alt="imagem do menu"
+          width="30"
+          height="30"
+        />
+      </div>
 
-<header>
-    <div>
-        <img class="imagemseta" src="imagens/seta.png" alt="imagem de seta" width="20" height="30"/>
-        <img class="imagemmenu" src="imagens/menu.png" alt="imagem do menu" width="30" height="30"/>
-    </div>
-
-    <nav class="menu">
-        <img class="imagemcruzbranca" src="imagens/cruz_branca.png" alt="imagem da cruz" width="50" height="50"/>
+      <nav class="menu">
+        <img
+          class="imagemcruzbranca"
+          src="imagens/cruz_branca.png"
+          alt="imagem da cruz"
+          width="50"
+          height="50"
+        />
         <div><a href="perfil.html">Perfil</a></div>
         <div><a href="calendario.html">Calendário</a></div>
         <div><a href="definicoes.html">Definições</a></div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
-    <h1 class="titulo">Convidado escolhido</h1>
-    
-    <div id="results">
-    <a href="/"><br></a>
-    </div>
-    <div class="buttons">
+    <main>
+      <h1 class="titulo">Convidado escolhido</h1>
+
+      <div id="results">
+        <a href="/"><br /></a>
+      </div>
+      <div class="buttons">
         <a href="convidado.html"><button>Retroceder</button></a>
-        <a href="index.html"><button>Confirmar</button></a>
-    </div>
-</main>
-
-<script src="js/js_geral.js"></script>
-<script src="js/js_resumoconvidado.js"></script>
-</body>
+        <a href="home.html"><button>Confirmar</button></a>
+      </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="js/src/firebase.js"></script>
+    <script src="js/js_resumoconvidado.js"></script>
+    <script src="js/js_geral.js"></script>
+  </body>
 </html>
