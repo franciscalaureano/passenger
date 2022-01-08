@@ -1,130 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/css_geral.css"/>
-    <link rel="stylesheet" type="text/css" href="css/css_viagem.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta charset="UTF-8"/>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css_geral.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_viagem.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
     <title>Agendar Viagem</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          class="imagemseta"
+          src="imagens/seta.png"
+          alt="imagem de seta"
+          width="20"
+          height="30"
+        />
+        <img
+          class="imagemmenu"
+          src="imagens/menu.png"
+          alt="imagem do menu"
+          width="30"
+          height="30"
+        />
+      </div>
 
-<header>
-    <div>
-        <img class="imagemseta" src="imagens/seta.png" alt="imagem de seta" width="20" height="30"/>
-        <img class="imagemmenu" src="imagens/menu.png" alt="imagem do menu" width="30" height="30"/>
-    </div>
-
-    <nav class="menu">
-        <img class="imagemcruzbranca" src="imagens/cruz_branca.png" alt="imagem da cruz" width="50" height="50"/>
+      <nav class="menu">
+        <img
+          class="imagemcruzbranca"
+          src="imagens/cruz_branca.png"
+          alt="imagem da cruz"
+          width="50"
+          height="50"
+        />
         <div><a href="perfil.html">Perfil</a></div>
         <div><a href="calendario.html">Calendário</a></div>
         <div><a href="definicoes.html">Definições</a></div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
-    <h1 class="titulo">Agendar viagem</h1>
-    <form action="resumoviagem.html" method="GET"> 
-
+    <main>
+      <h1 class="titulo">Agendar viagem</h1>
+      <form id="agendar-form" action="resumoviagem.html" method="GET">
         <div id="campos">
-            <div class="onde">
-                <label for="text">Para onde?</label>
-                <input type="text" name="Destino" id="text" required>
+          <div class="onde">
+            <label for="text">Para onde?</label>
+            <input type="text" name="Destino" id="onde" required />
+          </div>
+          <div class="quando">
+            <p>Quando?</p>
+            <div class="quando_conteudo">
+              <div class="data_inicio">
+                <label for="date">Início</label>
+                <input type="date" name="Data de Inicio" id="inicio" required />
+              </div>
+              <div class="data_fim">
+                <label for="date">Fim</label>
+                <input type="date" name="Data de Fim" id="fim" required />
+              </div>
             </div>
-            <div class="quando">
-                <p>Quando?</p>
-                <div class="quando_conteudo">
-                    <div class="data_inicio">
-                        <label for="date">Início</label>
-                        <input type="date" name="Data de Inicio" id="date" required>
-                    </div>
-                    <div class="data_fim">
-                        <label for="date">Fim</label>
-                        <input type="date" name="Data de Fim" id="date" required>
-                    </div>
-                </div>
-            </div> 
-            <div class="duracao">
-                <p>Duração da partilha?</p>
-                <div class="duracao_conteudo">
-                    <div class="duracao_inicio">
-                        <label for="inicio">Hora de início</label>
-                        <select name="Hora de Inicio" id="horainicio">
-                            <option label="01.00h" value="1h"></option>
-                            <option label="02.00h" value="2h"></option>
-                            <option label="03.00h" value="3h"></option>
-                            <option label="04.00h" value="4h"></option>
-                            <option label="05.00h" value="5h"></option>
-                            <option label="06.00h" value="6h"></option>
-                            <option label="07.00h" value="7h"></option>
-                            <option label="08.00h" value="8h"></option>
-                            <option label="09.00h" value="9h"></option>
-                            <option label="10.00h" value="10h"></option>
-                            <option label="11.00h" value="11h"></option>
-                            <option label="12.00h" value="12h"></option>
-                            <option label="13.00h" value="13h"></option>
-                            <option label="14.00h" value="14h"></option>
-                            <option label="15.00h" value="15h"></option>
-                            <option label="16.00h" value="16h"></option>
-                            <option label="17.00h" value="17h"></option>
-                            <option label="18.00h" value="18h"></option>
-                            <option label="19.00h" value="19h"></option>
-                            <option label="20.00h" value="20h"></option>
-                            <option label="21.00h" value="21h"></option>
-                            <option label="22.00h" value="22h"></option>
-                            <option label="23.00h" value="23h"></option>
-                            <option label="24.00h" value="24h"></option>
-                        </select>
-                    </div> 
-                    <div class="duracao_fim">
-                        <label for="inicio">Hora de fim</label>
-                        <select name="Hora de Fim" id="horafim">
-                            <option label="01.00h" value="1h"></option>
-                            <option label="02.00h" value="2h"></option>
-                            <option label="03.00h" value="3h"></option>
-                            <option label="04.00h" value="4h"></option>
-                            <option label="05.00h" value="5h"></option>
-                            <option label="06.00h" value="6h"></option>
-                            <option label="07.00h" value="7h"></option>
-                            <option label="08.00h" value="8h"></option>
-                            <option label="09.00h" value="9h"></option>
-                            <option label="10.00h" value="10h"></option>
-                            <option label="11.00h" value="11h"></option>
-                            <option label="12.00h" value="12h"></option>
-                            <option label="13.00h" value="13h"></option>
-                            <option label="14.00h" value="14h"></option>
-                            <option label="15.00h" value="15h"></option>
-                            <option label="16.00h" value="16h"></option>
-                            <option label="17.00h" value="17h"></option>
-                            <option label="18.00h" value="18h"></option>
-                            <option label="19.00h" value="19h"></option>
-                            <option label="20.00h" value="20h"></option>
-                            <option label="21.00h" value="21h"></option>
-                            <option label="22.00h" value="22h"></option>
-                            <option label="23.00h" value="23h"></option>
-                            <option label="24.00h" value="24h"></option>
-                        </select>
-                    </div>
-                </div>
-            </div> 
-            <div class="descricao">
-                <label for="descricao">Descrição</label>
-                <textarea name="Descrição" id="descricao"></textarea>
+          </div>
+          <div class="duracao">
+            <p>Duração da partilha?</p>
+            <div class="duracao_conteudo">
+              <div class="duracao_inicio">
+                <label for="inicio">Hora de início</label>
+                <select name="Hora de Inicio" id="horainicio">
+                  <option label="01.00h" value="1h"></option>
+                  <option label="02.00h" value="2h"></option>
+                  <option label="03.00h" value="3h"></option>
+                  <option label="04.00h" value="4h"></option>
+                  <option label="05.00h" value="5h"></option>
+                  <option label="06.00h" value="6h"></option>
+                  <option label="07.00h" value="7h"></option>
+                  <option label="08.00h" value="8h"></option>
+                  <option label="09.00h" value="9h"></option>
+                  <option label="10.00h" value="10h"></option>
+                  <option label="11.00h" value="11h"></option>
+                  <option label="12.00h" value="12h"></option>
+                  <option label="13.00h" value="13h"></option>
+                  <option label="14.00h" value="14h"></option>
+                  <option label="15.00h" value="15h"></option>
+                  <option label="16.00h" value="16h"></option>
+                  <option label="17.00h" value="17h"></option>
+                  <option label="18.00h" value="18h"></option>
+                  <option label="19.00h" value="19h"></option>
+                  <option label="20.00h" value="20h"></option>
+                  <option label="21.00h" value="21h"></option>
+                  <option label="22.00h" value="22h"></option>
+                  <option label="23.00h" value="23h"></option>
+                  <option label="24.00h" value="24h"></option>
+                </select>
+              </div>
+              <div class="duracao_fim">
+                <label for="inicio">Hora de fim</label>
+                <select name="Hora de Fim" id="horafim">
+                  <option label="01.00h" value="1h"></option>
+                  <option label="02.00h" value="2h"></option>
+                  <option label="03.00h" value="3h"></option>
+                  <option label="04.00h" value="4h"></option>
+                  <option label="05.00h" value="5h"></option>
+                  <option label="06.00h" value="6h"></option>
+                  <option label="07.00h" value="7h"></option>
+                  <option label="08.00h" value="8h"></option>
+                  <option label="09.00h" value="9h"></option>
+                  <option label="10.00h" value="10h"></option>
+                  <option label="11.00h" value="11h"></option>
+                  <option label="12.00h" value="12h"></option>
+                  <option label="13.00h" value="13h"></option>
+                  <option label="14.00h" value="14h"></option>
+                  <option label="15.00h" value="15h"></option>
+                  <option label="16.00h" value="16h"></option>
+                  <option label="17.00h" value="17h"></option>
+                  <option label="18.00h" value="18h"></option>
+                  <option label="19.00h" value="19h"></option>
+                  <option label="20.00h" value="20h"></option>
+                  <option label="21.00h" value="21h"></option>
+                  <option label="22.00h" value="22h"></option>
+                  <option label="23.00h" value="23h"></option>
+                  <option label="24.00h" value="24h"></option>
+                </select>
+              </div>
             </div>
-            <div class="permissao">
-                <label for="trajeto">Permitir partilhar o trajeto da viagem</label>
-                <input type="checkbox" name="Permissão de Trajeto" id="trajeto">
-            </div>
-            <div class="permissao">
-                <label for="playlist">Permitir contribuição para a playlist da viagem</label>
-                <input type="checkbox" name="Permissão de Playlist" id="playlist">
-            </div>
-            <button type="submit">Agendar</button>
+          </div>
+          <div class="descricao">
+            <label for="descricao">Descrição</label>
+            <textarea name="Descrição" id="descricao"></textarea>
+          </div>
+          <div class="permissao">
+            <label for="trajeto">Permitir partilhar o trajeto da viagem</label>
+            <input type="checkbox" name="Permissão de Trajeto" id="trajeto" />
+          </div>
+          <div class="permissao">
+            <label for="playlist"
+              >Permitir contribuição para a playlist da viagem</label
+            >
+            <input type="checkbox" name="Permissão de Playlist" id="playlist" />
+          </div>
+          <button type="submit">Agendar</button>
         </div>
-    </form>
-</main>
+      </form>
+    </main>
 
-<script src="js/js_geral.js"></script>
-</body>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="js/src/firebase.js"></script>
+    <script src="js/src/agendarviagem.js"></script>
+    <script src="js/js_geral.js"></script>
+  </body>
 </html>
