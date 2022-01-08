@@ -19,18 +19,14 @@ document.addEventListener("click", function (event) {
   }
 });
 
+var successBtn = document.getElementById("successoViagem");
+successBtn.addEventListener("click", () => {
+  alert("Viagem agendada com sucesso!");
+})
+
 /* RETROCEDER A PARTIR DA SETA */
 var backBtn = document.querySelector(".imagemseta");
 backBtn.addEventListener("click", () => {
   window.history.back();
 });
 
-function sucessoViagem(){
-  const alert = document.getElementById("photo-alert")
-  alert.style.display = "block";
-}
-
-function closeAlert(){
-  const alert = document.getElementById("photo-alert")
-  alert.style.display = "none";
-}
