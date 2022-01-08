@@ -2,6 +2,18 @@ body {
   margin: 0;
 }
 
+a {
+  position: absolute;
+}
+
+.menu_calendario {
+  margin-top: 12%;
+}
+
+.menu_definicoes {
+  margin-top: 12%;
+}
+
 .imagemmenu {
   top: 4%;
 }
@@ -15,21 +27,21 @@ body {
 
 .imagempausa {
   position: absolute;
-  left: 0;
-  top: 100px;
+  left: -20px;
+  top: 50px;
   z-index: 2;
 }
 
 .imagemviagem {
   position: absolute;
-  left: 300px;
-  top: 655px;
+  left: 260px;
+  top: 700px;
   z-index: 2;
 }
 
 .imagemamigos {
   position: absolute;
-  left: 250px;
-  top: 655px;
+  left: 190px;
+  top: 700px;
   z-index: 2;
 }
