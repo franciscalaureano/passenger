@@ -28,20 +28,26 @@ a {
 .imagempausa {
   position: absolute;
   left: -20px;
-  top: 50px;
+  top: 10px;
   z-index: 2;
 }
 
 .imagemviagem {
   position: absolute;
-  left: 260px;
-  top: 700px;
+  left: 265px;
+  top: 650px;
   z-index: 2;
 }
 
 .imagemamigos {
   position: absolute;
   left: 190px;
-  top: 700px;
+  top: 650px;
+  z-index: 2;
+}
+#chat {
+  position: absolute;
+  left: 115px;
+  top: 650px;
   z-index: 2;
 }
