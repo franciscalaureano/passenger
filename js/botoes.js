@@ -9,7 +9,7 @@ console.log(intViewportWidth, intViewportHeight);
 users.style.position = "absolute";
 users.style.top = intViewportHeight + "px";
 users.style.left = intViewportWidth - 100 + "px";
-users.style.zIndex = "5";
+users.style.zIndex = "2";
 
 /*chat.style.position = "absolute";
 chat.style.top = intViewportHeight + "px";
@@ -19,6 +19,6 @@ chat.style.zIndex = "5";*/
 agendar.style.position = "absolute";
 agendar.style.top = intViewportHeight + "px";
 agendar.style.left = intViewportWidth - 20 + "px";
-agendar.style.zIndex = "5";
+agendar.style.zIndex = "2";
 
 

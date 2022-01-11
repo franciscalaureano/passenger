@@ -21,7 +21,7 @@ document.addEventListener("click", function (event) {
 
 var successBtn = document.getElementById("successoViagem");
 successBtn.addEventListener("click", () => {
-  alert("Viagem agendada com sucesso!");
+  alert("Viagem agendada com sucesso! \n Podes encontrá-la no menu principal em Viagens");
 })
 
 /* RETROCEDER A PARTIR DA SETA */
