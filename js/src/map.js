@@ -43,7 +43,7 @@ auth.onAuthStateChanged((user) => {
             iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
             popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
         });
-        L.marker([img.Imglat, img.Imglong], {icon: imgIcon}).addTo(map).bindPopup("<img src=" +imageUrl + " width='100px' height= 'auto'/> ");
+        L.marker([img.Imglat-0.0001, img.Imglong], {icon: imgIcon}).addTo(map).bindPopup("<img src=" +imageUrl + " width='100px' height= 'auto'/> ");
            
           });
         };
@@ -79,6 +79,6 @@ auth.onAuthStateChanged((user) => {
         }).addTo(map);
       });
   } else {
-    console.log("user logged out");
+   
   }
 });

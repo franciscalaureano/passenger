@@ -79,3 +79,8 @@ div.entry input:checked ~ div.highlight {
   background-color: rgb(197, 197, 197) !important;
   border-radius: 30px;
 }
+
+.guides{
+  overflow-y: scroll;
+  max-height: 400px;
+}

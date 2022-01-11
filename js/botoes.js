@@ -11,12 +11,14 @@ users.style.top = intViewportHeight + "px";
 users.style.left = intViewportWidth - 100 + "px";
 users.style.zIndex = "5";
 
-chat.style.position = "absolute";
+/*chat.style.position = "absolute";
 chat.style.top = intViewportHeight + "px";
 chat.style.left = intViewportWidth - 180 + "px";
-chat.style.zIndex = "5";
+chat.style.zIndex = "5";*/
 
 agendar.style.position = "absolute";
 agendar.style.top = intViewportHeight + "px";
 agendar.style.left = intViewportWidth - 20 + "px";
 agendar.style.zIndex = "5";
+
+

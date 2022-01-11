@@ -62,4 +62,19 @@
   .imagemcruzbranca {
     margin-left: 80%;
   }
+
+  #logout{
+    background: #ffff;
+    border-radius: 10px;
+    padding: 2.5%;
+    height: 50%;
+	  color: #000000;
+	  border: none;
+    margin-top: 100px;
+	  margin-left: 120px;
+	  cursor: pointer;
+	  outline: inherit;
+    box-shadow: none;
+    font-family: Poppins, sans-serif;
+  }
 }
