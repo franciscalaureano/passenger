@@ -32,7 +32,7 @@ a {
   z-index: 2;
 }
 
-.imagemviagem {
+/* .imagemviagem {
   position: absolute;
   left: 265px;
   top: 550px;
@@ -45,9 +45,9 @@ a {
   top: 550px;
   z-index: 2;
 }
-#chat {
+.btn {
   position: absolute;
   left: 115px;
   top: 550px;
   z-index: 2;
-}
+} */
