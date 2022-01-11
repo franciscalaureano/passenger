@@ -45,7 +45,9 @@
         />
         <div class="menu_perfil"><a href="perfil.html">Perfil</a></div>
         <div class="menu_calendario"><a href="calendario.html">Viagens</a></div>
-        <div class="menu_definicoes"><a href="definicoes.html">Definições</a></div>
+        <div class="menu_definicoes">
+          <a href="definicoes.html">Definições</a>
+        </div>
       </nav>
     </header>
 
@@ -59,7 +61,7 @@
       />
     </a>
 
-    <a href="agendarviagem.html">
+    <a id="btnagendar" href="agendarviagem.html">
       <img
         class="imagemviagem"
         src="imagens/viagem.png"
@@ -72,17 +74,20 @@
     <a href="users.html">
       <img
         class="imagemamigos"
+        id="btnusers"
         src="imagens/amigos.png"
         alt="imagem amigos"
         width="90"
         height="auto"
       />
     </a>
-    <a  class="btn" id="chat" href="https://radiant-forest-87782.herokuapp.com/">
-      <img src="imagens/chat.png" id="img_chat"  width="90px"height="auto"/>
-  </a>
-
- 
+    <a
+      class="btn"
+      id="btnchat"
+      href="https://radiant-forest-87782.herokuapp.com/"
+    >
+      <img src="imagens/chat.png" id="img_chat" width="90px" height="auto" />
+    </a>
 
     <!-- MAPA -->
 
@@ -97,6 +102,7 @@
     <script src="js/src/firebase.js"></script>
     <script src="js/src/map.js"></script>
     <script src="js/js_geral.js"></script>
+    <script src="js/botoes.js"></script>
   </body>
 
   <script></script>
